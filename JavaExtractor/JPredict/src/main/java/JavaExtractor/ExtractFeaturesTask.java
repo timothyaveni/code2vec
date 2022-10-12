@@ -47,7 +47,7 @@ public class ExtractFeaturesTask implements Callable<Void> {
 
 		String toPrint = featuresToString(features);
 		if (toPrint.length() > 0) {
-			System.out.println(toPrint);
+			System.out.println(this.filePath + "\t" + toPrint);
 		}
 	}
 
